@@ -473,8 +473,8 @@ export default {
   },
   mounted() {
     this.form.clientType = "clash";
-    this.form.customBackend = "https://api.tsutsu.cc/sub?";
-    this.form.remoteConfig = "https://cdn.staticaly.com/gh/lhl77/sub-ini/main/tsutsu-full.ini";
+    this.form.customBackend = "http://sub.zxc.cn/sub?";
+    this.form.remoteConfig = "config/ACL4SSR.ini";
     //this.getBackendVersion();
   },
   methods: {
