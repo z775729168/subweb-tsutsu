@@ -426,7 +426,7 @@ export default {
       },
 
       loading: false,
-      customSubUrl: "http://sub.zxc.cn/",
+      customSubUrl: "",
       customShortSubUrl: "https://sou.yt/",
 
       dialogUploadConfigVisible: false,
