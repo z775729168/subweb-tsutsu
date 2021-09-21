@@ -254,24 +254,12 @@ export default {
           "自动判断客户端": "auto",
         },
         customBackend: {
-          "api.tsutsu.cc (つつ提供-香港CN2稳定)": "https://api.tsutsu.cc/sub?",
-          "api2.tsutsu.cc (つつ提供-香港CN2备用)": "https://api2.tsutsu.cc/sub?",
-          "api.v1.mk（肥羊提供-四端八核负载)": "https://api.v1.mk/sub?",
-          "subcon.dlj.tf (subconverter作者提供) ": "https://subcon.dlj.tf/sub?",
-          "api.dler.io (sub作者&lhie1提供)": "https://api.dler.io/sub?",
-          "api.wcc.best (sub-web作者提供)": "https://api.wcc.best/sub?",
-          "api.hope140.live (hope提供-vercel)": "https://api.hope140.live/sub?",
-          "sub.id9.cc (品云提供)": "https://sub.id9.cc/sub?",
+          "online": "https://sub.fairever.ml/sub?",
+          "local": "http://sub.zxc.cn/sub?",
         },
         backendOptions: [
-          { value: "https://api.tsutsu.cc/sub?" },
-          { value: "https://api2.tsutsu.cc/sub?" },
-          { value: "https://api.v1.mk/sub?" },
-          { value: "https://subcon.dlj.tf/sub?" },
-          { value: "https://api.dler.io/sub?" },
-          { value: "https://api.wcc.best/sub?" },
-          { value: "https://api.hope140.live/sub?" },
-          { value: "https://sub.id9.cc/sub?" },
+          { value: "https://sub.fairever.ml/sub?" },
+          { value: "http://sub.zxc.cn/sub?" },
         ],
         remoteConfig: [
           {
@@ -340,57 +328,57 @@ export default {
               {
                 label: "ACL4SSR默认",
                 value:
-                  "https://cdn.staticaly.com/gh/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini"
+                  "config/ACL4SSR.ini"
               },
               {
                 label: "ACL4SSR去广告",
                 value:
-                  "https://cdn.staticaly.com/gh/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_AdblockPlus.ini"
+                  "config/ACL4SSR_AdblockPlus.ini"
               },
               {
                 label: "ACL4SSR无自动测速",
                 value:
-                  "https://cdn.staticaly.com/gh/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoAuto.ini"
+                  "config/ACL4SSR_NoAuto.ini"
               },
               {
                 label: "ACL4SSR无广告拦截",
                 value:
-                  "https://cdn.staticaly.com/gh/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoReject.ini"
+                  "config/ACL4SSR_NoReject.ini"
               },
               {
                 label: "ACL4SSR精简版",
                 value:
-                  "https://cdn.staticaly.com/gh/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini.ini"
+                  "config/ACL4SSR_Mini.ini"
               },
               {
                 label: "ACL4SSR精简去广告",
                 value:
-                  "https://cdn.staticaly.com/gh/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_AdblockPlus.ini"
+                  "config/ACL4SSR_Mini_AdblockPlus.ini"
               },
               {
                 label: "ACL4SSR精简多重模式",
                 value:
-                  "https://cdn.staticaly.com/gh/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Mini_MultiMode.ini"
+                  "config/ACL4SSR_Mini_MultiMode.ini"
               },
               {
                 label: "ACL4SSR精简版带港美日国家",
                 value:
-                  "https://cdn.staticaly.com/gh/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiCountry.ini"
+                  "config/ACL4SSR_Mini_MultiCountry.ini"
               },
               {
                 label: "ACL4SSR全分组",
                 value:
-                  "https://cdn.staticaly.com/gh/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini"
+                  "config/ACL4SSR_Full.ini"
               },
               {
                 label: "ACL4SSR全分组多模式",
                 value:
-                  "https://cdn.staticaly.com/gh/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"
+                  "config/ACL4SSR_Full_MultiMode.ini"
               },
               {
                 label: "ACL4SSR全分组重度用户",
                 value:
-                  "https://cdn.staticaly.com/gh/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_Netflix.ini"
+                  "config/ACL4SSR_Full_Netflix.ini"
               }
             ]
           },
@@ -438,8 +426,8 @@ export default {
       },
 
       loading: false,
-      customSubUrl: "",
-      curtomShortSubUrl: "",
+      customSubUrl: "http://sub.zxc.cn/"
+      customShortSubUrl: "https://sou.yt/",
 
       dialogUploadConfigVisible: false,
       uploadConfig: "",
@@ -474,8 +462,8 @@ export default {
     return data;
   },
   created() {
-    // document.title = "Subscription Converter";
-    document.title = "つつの订阅转换 ";
+    document.title = "Subscription Converter";
+    // document.title = "つつの订阅转换 ";
      this.isPC = this.$getOS().isPc;
 
     // 获取 url cache
