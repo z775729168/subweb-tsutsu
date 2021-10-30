@@ -1,0 +1,178 @@
+body{
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width : 5px;  /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+    }
+body::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    }
+body::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    border-radius: 10px;
+}
+
+#app-container{
+    top:30px;
+    margin:auto;
+    position:absolute;
+    left:0;
+    right:0;
+}
+/* 主页面控制按钮 */
+#theme-btn{
+    height:30px;
+    display:block;
+    position:absolute;
+    right:5px;top:5px;
+    z-index:99999;
+    transition: all 0.05s linear;
+  }
+  #theme-btn:hover{
+    cursor: pointer;
+    user-select: none;
+    font-weight:bold;
+    transform: scale(1.05);
+    transition: all 0.1s linear;
+  }
+
+/* 控制面板 */
+#theme-box{
+    border-radius:20px;
+    display:none;
+    z-index:99999;
+    position:absolute;
+    opacity: 0;
+}
+                 /* 拖动部分 */
+#theme-title{
+    border-radius:20px 0 0 0;
+    font-size:26px;
+    font-weight:bold;
+    line-height:50px;
+    user-select: none;
+    padding-top:10px;
+    transition: all 0.08s linear;
+}
+#theme-title:hover{
+    cursor:pointer;
+    transition: all 0.2s linear;
+    
+}
+
+/* 关闭按钮 */
+#theme-close{
+    /* border:red solid 1px; */
+    padding:12.5px 7.5px 12.5px 7.5px;
+    border-radius:0 18px 0 0;
+    transition: all 0.1s linear;
+}
+#theme-close:hover{
+    transition: all 0.2s linear;
+    cursor:pointer;
+}
+
+#theme-container{
+    height:370px;
+    padding:0 45px 30px 50px;
+    margin:70px 5px 0 0;
+    overflow:auto;
+    user-select: none;
+}
+#theme-container::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width : 5px;  /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+    }
+#theme-container::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    }
+#theme-container::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    border-radius: 10px;
+}
+/* theme-container中a标签样式 */
+#theme-containter a{
+    text-decoration: none;
+}
+
+
+/* 获取主题按钮 */
+#click-to-themes{
+    font-size:small;
+    float:right;
+    margin-top:15px;
+}
+
+/* 主题展示图片 */
+.theme-pic{
+    display:inline-block;
+    height:135px;
+    width:180px;
+    margin-right:13px;
+    margin-top:10px;
+    padding:0;
+    /* 测试用，注意注释 */
+    /* border:1px red solid;  */
+    transition: all 0.1s linear;
+}
+.theme-pic:hover{
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+    cursor:pointer;
+}
+
+/* 主题展示图片文字 */
+.theme-text{
+    position:absolute;
+    height:115px;
+    width:170px;
+    text-align:center;
+    padding:10px 5px 10px 5px;
+    transition: all 0.1s linear;
+}
+.theme-text h3{
+    font-size:20px;
+}
+.theme-text span{
+    font-size:10px;
+}
+/* 主题文字出现 */
+.theme-text:hover{
+    transition: all 0.1s linear;
+}
+/* 广告位 */
+.qf{
+    margin-top:10px;
+    height:80px;
+    width:400px;
+    /* border:2px white solid; */
+    text-align:center;
+    transition: all 0.05s linear;
+}
+/* 广告位中a标签样式 */
+.qf a{
+    text-decoration: none;
+}
+/* 广告hover */
+.qf:hover{
+    cursor:pointer;
+    transform: scale(1.02);
+    transition: all 0.1s linear;
+}
+/* 关于 */
+#about{
+    margin-top:-15px;
+}
+/* 关于中a标签 */
+#about a{
+    text-decoration: none;
+}
+/* about中b标签 */
+#about b{
+    display:block;
+}
